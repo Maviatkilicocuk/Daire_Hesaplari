@@ -1,0 +1,30 @@
+package Giris;
+import java.util.Scanner;
+public class Daire_Hesaplari {
+
+    public static void main(String[] args) {
+
+        double pi, r, aci, cevre, alan, acili_alan;
+
+        Scanner input = new Scanner(System.in);
+
+        pi = 3.14;
+
+        System.out.print(" r değerini giriniz = ");
+        r = input.nextDouble();
+
+        System.out.print(" Alanı hesaplanacak açıyı giriniz = ");
+        aci = input.nextDouble();
+
+        cevre = 2 * pi * r;
+        alan = pi * r * r;
+        acili_alan = pi * r * r * (aci/360);
+
+        System.out.println(" Çevre = " +cevre);
+        System.out.println(" Bütün alan = " +alan);
+        System.out.print(" Açılı alan = " +acili_alan);
+
+
+
+    }
+}
